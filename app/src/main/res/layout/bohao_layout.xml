@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shuzijianpan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="3" >
+
+    <EditText
+        android:id="@+id/shuzi_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/shuruhaoma"
+        android:textColorHighlight="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageButton
+            android:id="@+id/shuzi1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_num_1_normal" />
+
+        <ImageButton
+            android:id="@+id/shuzi2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_num_2_normal" />
+
+        <ImageButton
+            android:id="@+id/shuzi3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_num_3_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageButton
+            android:id="@+id/shuzi4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_num_4_normal" />
+
+        <ImageButton
+            android:id="@+id/shuzi5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_num_5_normal" />
+
+        <ImageButton
+            android:id="@+id/shuzi6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_num_6_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageButton
+            android:id="@+id/shuzi7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_num_7_normal" />
+
+        <ImageButton
+            android:id="@+id/shuzi8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_num_8_normal" />
+
+        <ImageButton
+            android:id="@+id/shuzi9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_num_9_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="8dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageButton
+            android:id="@+id/shuzi_xing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_star_normal" />
+
+        <ImageButton
+            android:id="@+id/shuzi0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_num_0_normal" />
+
+        <ImageButton
+            android:id="@+id/shuzi_jing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="jp_onClick"
+            android:src="@drawable/dial_husa_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_weight="0.8" >
+
+            <Button
+                android:id="@+id/button_shouqi"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/tabbar_dialer_up_pressed" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="收起"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/dadianhua"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2.4"
+            android:background="@drawable/bohao_1"
+            android:onClick="jp_onClick" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_weight="0.8" >
+
+            <Button
+                android:id="@+id/shuzi_shanchubtn"
+                android:layout_width="39dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/wq"
+                android:onClick="jp_onClick" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shuzi_shanchubtn"
+                android:layout_centerHorizontal="true"
+                android:text="退格"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

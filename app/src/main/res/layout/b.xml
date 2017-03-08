@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/top_contacts_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/pb_search_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginTop="6dip"
+                        android:ems="10"
+                        android:hint="输入联系人姓名"
+                        android:imeOptions="actionDone"
+                        android:numeric="integer"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom"
+            android:layout_below="@id/top"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ListView
+                    android:id="@+id/pb_listvew"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#336598"
+                    android:dividerHeight="2dp" />
+
+                <TextView
+                    android:id="@+id/pb_letter_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/toast_letter_bg"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/nocontacts_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="暂无匹配联系人"
+                    android:textColor="#000000"
+                    android:textSize="28dip"
+                    android:visibility="gone" />
+
+                <com.example.tctc1002.AlphabetScrollBar
+                    android:id="@+id/alphabetscrollbar"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:visibility="invisible" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/add_contacts"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dip"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="新建"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dip"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="分组"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/black"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dip"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="黑白名单"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/more1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dip"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="更多"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

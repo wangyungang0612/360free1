@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/button_q"
+            android:layout_width="wrap_content"
+            android:layout_height="47.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:text="清空記錄" />
+
+        <Button
+            android:id="@+id/button_s"
+            android:layout_width="wrap_content"
+            android:layout_height="47.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/button_m"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:text="設置" />
+
+        <Button
+            android:id="@+id/button_w"
+            android:layout_width="wrap_content"
+            android:layout_height="47.5dp"
+            android:layout_above="@+id/button_s"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:text="未接電話" />
+
+        <Button
+            android:id="@+id/button_m"
+            android:layout_width="wrap_content"
+            android:layout_height="47.5dp"
+            android:layout_above="@+id/button_w"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:gravity="left|center"
+            android:text="陌生電話" />
+    </RelativeLayout>
+
+</RelativeLayout>
